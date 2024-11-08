@@ -1,0 +1,15 @@
+[package]
+name = "rsa-tool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.93"
+iced = { version = "0.13.1", features = ["tokio"] }
+rand = "0.8.5"
+rfd = "0.15.0"
+rsa = "0.9.6"
+tokio = { version = "1.41.1", features = ["full"] }
+
+[profile.release]
+opt-level = 3
